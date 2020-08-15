@@ -1,0 +1,543 @@
+{
+  "intents": [
+    {
+      "intent": "Psych",
+      "examples": [
+        {
+          "text": "Covid-19 is depressing me. I get suicidal thoughts"
+        },
+        {
+          "text": "I'm feeling sick and depressed"
+        },
+        {
+          "text": "I'm feeling lonely."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Initiate",
+      "examples": [
+        {
+          "text": "qwerty"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "kids",
+      "examples": [
+        {
+          "text": "My kid is suffering from fever and severe cold."
+        },
+        {
+          "text": "My kid is not feeling well.She is having diarrhea"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "thank_you",
+      "examples": [
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "cheers"
+        },
+        {
+          "text": "appreciate it"
+        },
+        {
+          "text": "thanks"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "goodbyes",
+      "examples": [
+        {
+          "text": "see ya"
+        },
+        {
+          "text": "will get back to you"
+        },
+        {
+          "text": "talk to you soon"
+        },
+        {
+          "text": "see you"
+        },
+        {
+          "text": "good night"
+        },
+        {
+          "text": "good bye"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "general",
+      "examples": [
+        {
+          "text": "Im not feeling well.I feel weak and have diarrhea"
+        },
+        {
+          "text": "I'm not feeling well.I have a fever and vomiting."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "welcome"
+        },
+        {
+          "text": "dear"
+        },
+        {
+          "text": "kia ora"
+        },
+        {
+          "text": "vanankkam"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "good morning"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "location",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "delhi",
+          "synonyms": [
+            "new delhi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "banglore",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pune",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mumbai",
+          "synonyms": [
+            "bombay"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "kolkata",
+          "synonyms": [
+            "calcutta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "coimbatore",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "bihar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "madurai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "India",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "chennai",
+          "synonyms": [
+            "madras",
+            "hyderabad",
+            "tamilnadu"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "physical_health",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "sick",
+          "synonyms": [
+            "ill",
+            "miserable"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "fever",
+          "synonyms": [
+            "diarrhea",
+            "headache",
+            "nausea",
+            "flu",
+            "cough",
+            "vomiting",
+            "pneumonia",
+            "dengue",
+            "colds"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "toothache",
+          "synonyms": [
+            "headache",
+            "tonsillitis",
+            "indigestion",
+            "heartburn",
+            "nosebleeds",
+            "migraine",
+            "pain"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "mental_health",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "stress",
+          "synonyms": [
+            "stressful",
+            "boredom",
+            "loneliness",
+            "frustrating",
+            "disheartening",
+            "depressing",
+            "disappointing",
+            "discouraging",
+            "sadness",
+            "hopelessness"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Thankyou",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You're welcome. Please let me know if you need anything else."
+              },
+              {
+                "text": "My pleasure."
+              },
+              {
+                "text": " No problem. Let me know if there is anything else I can help with."
+              },
+              {
+                "text": "I aim to please."
+              },
+              {
+                "text": "Welcome, I'm pleased :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_3_1593289097739",
+      "conditions": "#thank_you",
+      "dialog_node": "node_1_1593289242992",
+      "previous_sibling": "node_8_1593287421472"
+    },
+    {
+      "type": "standard",
+      "title": "Goodbye",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice talking to you today."
+              },
+              {
+                "text": "Bye.See you next time"
+              },
+              {
+                "text": "Goodbye."
+              },
+              {
+                "text": "Have a nice day."
+              },
+              {
+                "text": "I hope you were satisfied. See you later"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1593289097739",
+      "conditions": "#goodbyes",
+      "dialog_node": "node_2_1593289357012",
+      "previous_sibling": "node_1_1593289242992"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, good to see you. What can I help you with?"
+              },
+              {
+                "text": "Hi, Welcome back. How can I help you?"
+              },
+              {
+                "text": "Hi there. How can I help you?"
+              },
+              {
+                "text": "Hello. How may I assist you today?"
+              },
+              {
+                "text": "Hi. What can I help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1593289097739",
+      "context": {},
+      "conditions": "#greetings",
+      "dialog_node": "node_8_1593287421472"
+    },
+    {
+      "type": "folder",
+      "title": "Chitchat",
+      "dialog_node": "node_3_1593289097739",
+      "previous_sibling": "node_8_1597421860826"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "PEDIATRICIAN. Please click the video call Icon to talk to our pediatrician( Dr.Kuruvila Thomas)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#kids",
+      "dialog_node": "node_10_1597450431251",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "PSYCHIATRIST. Please click the video call Icon to talk to our Psychiatrist( Dr.Edison Thomas)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Psych",
+      "dialog_node": "node_10_1597450563523",
+      "previous_sibling": "node_10_1597450431251"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              },
+              {
+                "text": "It looks like we are not quite getting each other today. Would you like to\ntalk to a human agent instead?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_3_1593289097739",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "GENERAL DOCTOR. Please click the video call Icon to talk to our doctor ( Dr.Vetrivelan)."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#general",
+      "dialog_node": "node_7_1597450208460",
+      "previous_sibling": "node_10_1597450563523"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Welcome to Health plus. I'm your virtual health assistant. You can disclose your problems here securely we will connect you to a medical professional accordingly."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Initiate",
+      "dialog_node": "node_8_1597421860826",
+      "previous_sibling": "node_7_1597450208460"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Welcome to Health plus. I'm your virtual health assistant. You can disclose your problems here securely we will connect you to a medical professional accordingly."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "HealthPlus skill",
+  "language": "en",
+  "description": ""
+}

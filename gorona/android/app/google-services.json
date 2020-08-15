@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "181128313862",
+    "firebase_url": "https://gorona-79790.firebaseio.com",
+    "project_id": "gorona-79790",
+    "storage_bucket": "gorona-79790.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181128313862:android:2fbf0b5e2ef4f2e1d91787",
+        "android_client_info": {
+          "package_name": "com.vitcc.gorona"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181128313862-64hton1psi899iqrhd01u0upa1lpknb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHuVPYr4hwKDpnLnh2KsX1hap62Whr3Ns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181128313862-64hton1psi899iqrhd01u0upa1lpknb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
