@@ -53,11 +53,11 @@ It Solves the following problems:
 
 ## Demo video
 
-[![Watch the video](https://github.com/Code-and-Response/Liquid-Prep/blob/master/images/IBM-interview-video-image.png)](https://youtu.be/vOgCOoy_Bx0)
+[![Watch the video](https://github.com/Code-and-Response/Liquid-Prep/blob/master/images/IBM-interview-video-image.png)]()
 
 ## The architecture
 
-![Cimate Change/gorona architecture](architechture.PNG)
+![Covid-19/gorona architecture](architechture.PNG)
 
 1. Registering as a user and interacting with the Gorona app
 2. Interfacing third party apps :
