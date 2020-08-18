@@ -79,9 +79,9 @@ It Solves the following problems:
 
 ## File Details
 
-1. [Flutter - gorona app source code](Umbrella-Apps/User_app/umbrella)
-1. [Watson dialog skill](Server/skill-umbrella-bot-dialog-skill.json)
-1. [App UI screenshots](screen-shots)
+1. [Flutter - gorona app source code](gorona)
+1. [Watson dialog skill](chatbot_skills)
+1. [App UI screenshots](screenshots)
 
 ## Getting started
 
@@ -103,7 +103,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 2. Register the above gievn API services and create a firebase account with a new project and replace the google-services.json file in the [app]() directory
 
-3. Activate the IBM watson assistant resource and import the dialog skill from the [Server](Server/skill-umbrella-bot-dialog-skill.json) folder.Make note of the API Key, Assistant ID and Assistant url.
+3. Activate the IBM watson assistant resource and import the dialog skill from the [Chatbot-skills](chatbot_skills) folder. Make note of the API Key, Assistant ID and Assistant url.
 
 4. goto the [secret.dart](gorona/lib/secret.dart) and enter your API credentials
 
