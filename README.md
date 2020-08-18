@@ -57,7 +57,7 @@ It Solves the following problems:
 
 ## The architecture
 
-![Cimate Change/gorona architecture](architecture.png)
+![Cimate Change/gorona architecture](architechture.PNG)
 
 1. Registering as a user and interacting with the Gorona app
 2. Interfacing third party apps :
