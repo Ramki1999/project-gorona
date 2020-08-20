@@ -53,7 +53,7 @@ It Solves the following problems:
 
 ## Demo video
 
-[![Watch the video](https://github.com/Code-and-Response/Liquid-Prep/blob/master/images/IBM-interview-video-image.png)]()
+[![Watch the video](screenshots/video_title.jpeg)](https://youtu.be/YkK4N0BTXWU)
 
 ## The architecture
 
