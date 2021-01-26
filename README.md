@@ -2,7 +2,7 @@
 
 Project Gorona is a COVID-19 resilience app that aims to solve the widespread problems caused by the pandemic and country lockdown.	
 
-![Output demo](gorona.gif)
+![Output demo](gorona.mp4)
 
 ## Contents
 
